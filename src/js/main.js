@@ -2,9 +2,10 @@ $(function () {
     let block_show = null;
 
     function scrollTracking() {
+        let scrollButton = $('.main-section__scroll');
         var windowTop = $(window).scrollTop();
         var windowHeight = $(window).height();
-        var  = $('.aside__sunflow').offset().top;
+      //  var   = $('.aside__sunflow').offset().top;
         var eh = $('.aside__sunflow').outerHeight();
 
         if (et >= wt && et + eh <= windowHeight + windowTop) {
