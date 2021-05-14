@@ -18,6 +18,9 @@
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid #e0e0e0;
+            & img {
+                width: 120px;
+            }
         }
         &-copyright {
             padding: 40px;
@@ -31,9 +34,12 @@
             font-size: 16px;
             line-height: 150%;
             color: #cecece;
-            @media(max-width:1350px){
+            @media (max-width: 1350px) {
                 font-size: 14px;
             }
+        }
+        @media (max-width: 890px) {
+            max-width: 100%;
         }
     }
     &__contact {
@@ -42,6 +48,9 @@
         max-width: 466px;
         width: 100%;
         border-right: 1px solid #e0e0e0;
+        @media (max-width: 890px) {
+            max-width: 100%;
+        }
     }
     &__menu {
         display: flex;
@@ -49,6 +58,12 @@
         height: 480px;
         max-width: 772px;
         width: 100%;
+        @media (max-width: 890px) {
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 890px) {
+        flex-direction: column-reverse;
     }
 }
 .contact {
@@ -66,6 +81,10 @@
             line-height: 138%;
             color: #999999;
         }
+        @media (max-width: 890px) {
+            align-items: center;
+            justify-content: center;
+        }
     }
     &__list {
         margin-top: 50px;
@@ -76,8 +95,11 @@
             line-height: 135%;
             color: #000000;
             margin-bottom: 40px;
-            &:nth-last-child(1){
+            &:nth-last-child(1) {
                 margin-bottom: 20px;
+                @media (max-width: 950px) {
+                    margin-bottom: 20px;
+                }
             }
             &::before {
                 content: "";
@@ -85,18 +107,24 @@
                 height: 24px;
                 margin-right: 20px;
             }
-            @media(max-width:1350px){
+            @media (max-width: 1350px) {
                 font-size: 16px;
+            }
+            @media (max-width: 950px) {
+                margin-bottom: 20px;
             }
         }
     }
-    &__facebook {
+    &__facebook a {
         padding: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 107px;
         width: 100%;
+        @media (max-width: 890px) {
+            border-bottom: 1px solid #e0e0e0;
+        }
     }
 }
 
@@ -108,6 +136,9 @@
     text-transform: uppercase;
     color: #8da832;
     margin-left: 44px;
+    @media (max-width: 890px) {
+        margin-left: 14px;
+    }
 }
 .phone-numbers {
     display: flex;
@@ -119,7 +150,17 @@
     display: flex;
 }
 .--location p {
-    margin-left: 15px;
+    max-width: 368px;
+    width: 100%;
+    @media (max-width: 1330px) {
+        max-width: 280px;
+    }
+    @media (max-width: 1110px) {
+        max-width: 220px;
+    }
+    @media (max-width: 985px) {
+        max-width: 180px;
+    }
 }
 .--phone::before {
     background-image: url("../img/phone_f.png");
@@ -129,6 +170,7 @@
 }
 .--location::before {
     background-image: url("../img/location.png");
+    background-position: cover;
 }
 
 .menu {
@@ -150,8 +192,19 @@
                 font-size: 29px;
                 line-height: 138%;
                 color: #000000;
+                @media (max-width: 1350px) {
+                    font-size: 22px;
+                }
+                @media (max-width: 930px) {
+                    padding: 0 30px 0 30px;
+                }
             }
             border-bottom: 1px solid #e0e0e0;
+            &:nth-last-child(1) {
+                @media (max-width: 890px) {
+                    display: none;
+                }
+            }
             &:nth-last-child(1) a {
                 justify-content: left;
             }
@@ -162,6 +215,9 @@
                 line-height: 105%;
                 color: rgba(255, 255, 255, 0.85);
                 margin-left: 35px;
+                @media (max-width: 1350px) {
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -180,4 +236,23 @@
     background: #9fbe37;
     height: 107px;
     border-bottom: none;
+}
+
+.footer__back-up {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 600px) {
+        display: flex;
+    }
+}
+.back-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+    color: rgba(255, 255, 255, 0.85);
 }
