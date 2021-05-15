@@ -1,0 +1,25 @@
+.basis-elem-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.basis-big-elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basis-big-img {
+    max-width: 337px;
+    width: 100%;
+}
+.product-big-elem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 40px 30px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    @media (max-width: 600px) {
+        padding: 30px 20px;
+    }
+}

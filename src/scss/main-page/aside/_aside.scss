@@ -1,0 +1,105 @@
+@import "aside-small-elem";
+@import "aside-big-elem";
+@import "aside-link"; 
+
+.aside {
+    &__main {
+        max-width: 712px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(80px);
+        -webkit-backdrop-filter: blur(80px);
+        -moz-backdrop-filter: blur(80px);
+        -o-backdrop-filter: blur(80px);
+        -ms-backdrop-filter: blur(80px);
+        @media (max-width: 600px) {
+            padding: 20px;
+        }
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 37px;
+        line-height: 105%;
+        color: #fff;
+        @media (max-width: 1000px) {
+            font-size: 24px;
+        }
+    }
+    &__scroll {
+        cursor: pointer;
+    }
+    &__text {
+        margin-top: 20px;
+        & p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            @media (max-width: 1000px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__sunflow {
+        max-width: 712px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1300px) {
+            width: 500px;
+        }
+        @media (max-width: 1000px) {
+            width: 400px;
+        }
+        @media (max-width: 740px) {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+
+.sunflow,
+.rapce,
+.linen,
+.basis {
+    &__title {
+        padding: 30px 40px 35px 40px;
+        @media (max-width: 600px) {
+            padding: 23px 20px 0 20px;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 135%;
+    color: #fff;
+    &-img {
+        width: 21px;
+        height: 21px;
+    }
+    &-text {
+        margin-left: 10px;
+    }
+}
+
+.basis__product {
+    background: #8da832;
+    backdrop-filter: blur(80px);
+}

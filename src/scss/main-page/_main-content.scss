@@ -1,0 +1,25 @@
+
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    height: auto;
+    &__img{
+        width: 100%;
+        height: 1080px;
+    }
+}
+
+.--first-title {
+    padding: 0;
+}
+
+.sunflow-section,
+.linen-section,
+.rapce-section,
+.basis-section {
+    display: none;
+}

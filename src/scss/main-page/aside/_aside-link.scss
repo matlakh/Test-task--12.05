@@ -1,0 +1,25 @@
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
+}
+.link-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.85);
+    @media (max-width: 600px) {
+        font-size: 21px;
+    }
+}
+.link-img {
+    width: 37px;
+    height: 37px;
+}
