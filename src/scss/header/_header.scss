@@ -1,7 +1,7 @@
 @import "lang";
-@import "mobile";
 @import "nav";
 @import "contact";
+@import "mobile";
 
 .header {
     display: flex;
@@ -69,6 +69,7 @@
         @media (max-width: 1024px) {
             display: none;
         }
+        
     }
     @media (max-width: 1024px) {
         height: 90px;
