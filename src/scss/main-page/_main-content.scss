@@ -1,9 +1,12 @@
 .section {
     &__bg {
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;
         z-index: -100;
+        width: 100%;
+        height: 100vh;
         &__img {
             width: 100%;
             height: 1080px;
@@ -56,10 +59,17 @@
 
 .sunflow-section {
     top: 750px;
-    z-index: -80;
 }
 .linen-section {
-    top: 800px;
+    top: 1500px;
     display: block;
     z-index: -50;
+}
+.rapce-section{
+    top:2000px;
+    z-index: -40;
+}
+.basis-section{
+    top:2800px;
+    z-index: -30;
 }
