@@ -19,8 +19,9 @@
         line-height: 107%;
         text-transform: uppercase;
         color: #f2f2f2;
-        padding: 45px 0 0 0px;
+        padding: 0;
         max-width: 800px;
+        z-index: -190;
         @media (max-width: 1590px) {
             font-size: 80px;
         }
@@ -61,6 +62,7 @@
         }
     }
     &__aside {
+        min-height: 3400px;
         background: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(80px);
         @media (max-width: 1300px) {

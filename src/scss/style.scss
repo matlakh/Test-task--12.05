@@ -50,7 +50,7 @@ body {
     @media (max-width: 1740px) {
         padding: 0px 30px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 850px) {
         padding: 0px 0px;
     }
 }
@@ -58,4 +58,4 @@ body {
 .is-menu-open {
     position: fixed;
     overflow: hidden;
-  }
+}

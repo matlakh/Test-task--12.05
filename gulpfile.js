@@ -22,7 +22,7 @@ const _webphtml = require("gulp-webp-in-html");
 const { sync } = require("gulp-sass");
 
 const sassScss = () => {
-    return src("src/scss/*.scss")
+    return src("src/scss/**/*.scss")
         .pipe(
             _sass({
                 includePaths: ["src/scss"],
@@ -183,7 +183,7 @@ exports.moveJS = moveJS;
  */
 const startWatch = () => {
     watch("src/pages/**/*.html", fileinclude);
-    watch("src/scss/*.scss", sassScss);
+    watch("src/scss/**/*.scss", sassScss);
     watch("src/fonts/*.ttf", series(convertFonts, fontsStyle));
     watch("src/img/", series(convertToWebp, compressImgs));
     watch("src/js/*.js", concatJSLibs);

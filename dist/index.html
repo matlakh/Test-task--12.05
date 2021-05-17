@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="./img/logo-img.svg" type="img/svg">
 
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="./css/bundle.css">
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -57,46 +58,70 @@
 					</a>
 
 					<ul class="menu__box-list">
-						<li class="menu__item lang-item">
+						<li class="nav__list-item lang-item">
 							<ul class="lang__list-mobile">
-								<li class="lang__list-mobile-item"><a href="#">KZ</a></li>
-								<li class="lang__list-mobile-item"><a href="#">RU</a></li>
-								<li class="lang__list-mobile-item"><a href="#">EN</a></li>
+								<li class="lang__list-item"><a href="#">KZ</a></li>
+								<li class="lang__list-item"><a href="#">RU</a></li>
+								<li class="lang__list-item"><a href="#">EN</a></li>
 							</ul>
 						</li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Главная </a><img src="./img/right.png" alt="right"></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">О нас </a><img src="./img/right.png" alt="right"></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Закупки</a> <img src="./img/right.png" alt="right"></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Продажи </a><img src="./img/right.png" alt="right"></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Команда </a><img src="./img/right.png" alt="right"></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Контакты </a><img src="./img/right.png" alt="right"></li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>Главная </p>
+							</a>
+
+						</li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>О нас </p>
+							</a>
+
+						</li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>Закупки</p>
+							</a>
+
+						</li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>Продажи </p>
+							</a>
+
+						</li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>Команда </p>
+							</a>
+
+						</li>
+						<li class="nav__list-item"><a class="nav__list-item-link" href="#">
+								<p>Контакты</p>
+							</a>
+
+						</li>
 					</ul>
 
-					<div class="mobile-contact">
-						<div class="contact__info">
-							<p>Заказать звонок</p>
-							<a href="tel:77222518417">+7 (7222) 51 84 17 </a>
-						</div>
-						<div class="contact__img">
-							<a href="#"> <img src="./img/phone.png" alt="phone"></a>
-						</div>
+
+					<div class="contact__info">
+						<p>Заказать звонок</p>
+						<a href="tel:77222518417">+7 (7222) 51 84 17 </a>
 					</div>
+					<div class="contact__img">
+						<a href="#"> <img src="./img/phone.png" alt="phone"></a>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<div class="wrapper">
-		<hr>
+		<hr class="line">
 	</div>
 
 	<section class="main-section">
 		<div class="wrapper">
 			<div class="main-section__body">
-				<h1 class="main-section__title --first-title">
+				<h1 class="main-section__title">
 					лидер отрасли В восточном казахстане
 				</h1>
-				<a class="main-section__scroll" href="#sunflow">
+				<a class="main-section__scroll">
 					<img src="./img/down.png" alt="down">
 				</a>
 			</div>
@@ -124,7 +149,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="aside__sunflow">
+				<div id="sunflow" class="aside__sunflow">
 					<div class="sunflow__title title">
 						<img src="./img/sunflow.svg" alt="sunflow" class="title-img">
 						<p class="title-text">Подсолнечник
@@ -248,33 +273,41 @@
 		</div>
 	</section>
 
-	<div class="section-bg">
-		<img class="section-bg__img" src="./img/bg_img.jpg" alt="">
+	<div class="head-section section__bg">
+		<img class="section__bg__img" src="./img/bg_img.jpg" alt="">
 	</div>
-	<div id="sunflow" class="sunflow-section section-bg">
-		<div class="main-section__title">Продукция.
-			Подсолнечник
+	<div class="sunflow-section section__bg">
+		<div class="section__wrapper">
+			<div class="section__title">Продукция.
+				Подсолнечник
+			</div>
+			<img class="section__bg__img" src="./img/sf_bg.jpg" alt="sf_bg">
 		</div>
-		<img class="section-bg__img" src="./img/sf_bg.jpg" alt="sf_bg">
 	</div>
-	<div class="linen-section section-bg">
-		<div class="main-section__title">Продукция.
-			Подсолнечник
+	<div class="linen-section section__bg">
+		<div class="section__wrapper">
+			<div class="section__title">Продукция.
+				Лен
+			</div>
+			<img class="section__bg__img" src="./img/linen.jpg" alt="sf_bg">
 		</div>
-		<img class="section-bg__img" src="./img/linen.jpg" alt="sf_bg">
 	</div>
-	<div class="rapce-section section-bg">
-		<div class="main-section__title">Продукция.
-			Подсолнечник
-		</div>
-		<img class="section-bg__img" src="./img/rapce_bg.jpg" alt="sf_bg">
-	</div>
-	<div class="basis-section section-bg">
-		<div class="main-section__title">Продукция.
-			Подсолнечник
-		</div>
-		<img class="section-bg__img" src="./img/basis_bg.jpg" alt="sf_bg">
-	</div>
+	<!--<div class="rapce-section section__bg">
+    <div class="section__wrapper">
+        <div class="section__title">Продукция.
+            Подсолнечник
+        </div>
+        <img class="section-bg__img" src="./img/rapce_bg.jpg" alt="sf_bg">
+    </div>
+</div>
+<div class="basis-section section__bg">
+    <div class="section__wrapper">
+        <div class="main-section__title">Продукция.
+            Подсолнечник
+        </div>
+        <img class="section-bg__img" src="./img/basis_bg.jpg" alt="sf_bg">
+    </div>
+</div>-->
 
 
 
@@ -372,10 +405,9 @@
 		</div>
 	</footer>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-<script src="./js/main.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./js/main.js"></script>
 
 </body>
 
