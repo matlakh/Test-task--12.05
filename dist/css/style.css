@@ -1066,6 +1066,14 @@
       border-radius: 50%;
       margin: 0 20px; }
 
+.page-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 107%;
+  text-transform: uppercase;
+  color: #ffffff; }
+
 *,
 *::before,
 *::after {
