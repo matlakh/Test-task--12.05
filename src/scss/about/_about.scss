@@ -1,10 +1,19 @@
-.about__bg {
-    background: #262626;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -100;
+.about {
+    &__bg {
+        background: #262626;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -100;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 100px;
+        line-height: 107%;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 }
-

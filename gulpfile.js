@@ -27,7 +27,6 @@ const sassScss = () => {
             _sass({
                 includePaths: ["src/scss"],
                 errLogToConsole: true,
-                outputStyle: "compressed",
             })
         )
         .pipe(
