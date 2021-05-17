@@ -33,6 +33,9 @@
                 &.back-up::after {
                     content: none;
                 }
+                &.back-up{
+                    color: rgba(255, 255, 255, 0.85);
+                }
             }
             border-bottom: 1px solid #e0e0e0;
             &:nth-last-child(1) {
@@ -92,5 +95,12 @@
     color: rgba(255, 255, 255, 0.85);
     &::after {
         content: none;
+    }
+    &::before {
+        content: "";
+        margin-right: 20px;
+        width: 37px;
+        height: 37px;
+        background-image: url('../img/top.png');
     }
 }

@@ -22,7 +22,7 @@
     height: 60px;
     transition-duration: 0.25s;
     border-bottom: 1px solid #4d4d4d;
-    &-link {
+    & a {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -80,6 +80,9 @@
     padding-bottom: 20px;
     border-bottom: 2px solid transparent;
     transition-duration: 0.25s;
+    & a::after{
+        content: none;
+    }
     &:hover {
         color: #9fbe37;
         border-bottom: 2px solid #9fbe37;
