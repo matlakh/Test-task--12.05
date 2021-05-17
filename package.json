@@ -33,6 +33,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "aos": "^2.3.4",
+    "browsersync": "0.0.1-security",
     "gulp-html-beautify": "^1.0.1",
     "gulp-webp": "^4.0.1",
     "gulp-webp-in-html": "^1.0.1",
