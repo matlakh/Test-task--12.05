@@ -1,7 +1,7 @@
 
 $.scrollify({
     section : ".section__bg",
-    scrollSpeed: 1000,
+    scrollSpeed: 1100,
     offset : 0,
 }); 
 
@@ -14,7 +14,7 @@ if (animItems.length > 0) {
             const animItem = animItems[index];
             const animItemsHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
-            const animStart = 2;
+            const animStart = 4;
 
             let animItemPoint = window.innerHeight - animItemsHeight / animStart;
             if (animItemsHeight > window.innerHeight) {
