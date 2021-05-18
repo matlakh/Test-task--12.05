@@ -1,14 +1,20 @@
-    .page-title {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 100px;
-        line-height: 107%;
-        text-transform: uppercase;
-        color: #ffffff;
+.page-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 107%;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media(max-width: 1530px) {
+        font-size: 70px;
     }
-    
-    @media(max-width: 1005px) {
-        .page-title {
-            font-size: 70px;
-        }
+    @media(max-width: 768px) {
+        font-size: 55px;
     }
+    @media(max-width: 576px) {
+        font-size: 40px;
+    }
+    @media(max-width: 414px) {
+        font-size: 35px;
+    }
+}

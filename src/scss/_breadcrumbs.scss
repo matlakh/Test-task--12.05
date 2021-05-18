@@ -15,7 +15,7 @@
         &-link {
             color: #9fbe37;
         }
-        & + .breadcrumbs__item::before {
+        &+.breadcrumbs__item::before {
             content: "";
             display: inline;
             width: 6px;
@@ -24,5 +24,8 @@
             border-radius: 50%;
             margin: 0 20px;
         }
+    }
+    @media(max-width:850px) {
+        display: none;
     }
 }

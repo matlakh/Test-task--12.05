@@ -6,7 +6,6 @@
 @import "./about/about";
 @import "breadcrumbs";
 @import "page-title";
-
 *,
 *::before,
 *::after {
@@ -27,13 +26,15 @@ li {
     list-style: none;
     padding: 0;
 }
+
 hr {
     color: rgba(255, 255, 255, 0.3);
-    @media (max-width: 600px) {
+    @media (max-width: 850px) {
         margin-left: 20px;
         margin-right: 20px;
     }
 }
+
 body {
     @media (max-width: 1740px) {
         padding: 0px 0px;
