@@ -1,11 +1,14 @@
-.page-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 100px;
-    line-height: 107%;
-    text-transform: uppercase;
-    color: #ffffff;
-    @media(max-width: 1005px) {
-        font-size: 70px;
+    .page-title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 100px;
+        line-height: 107%;
+        text-transform: uppercase;
+        color: #ffffff;
     }
-}
+    
+    @media(max-width: 1005px) {
+        .page-title {
+            font-size: 70px;
+        }
+    }
