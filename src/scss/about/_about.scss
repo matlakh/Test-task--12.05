@@ -4,17 +4,24 @@
         position: absolute;
         height: 100%;
         top: 0;
-        left: 0;
+        left: 0;bottom: 0;
         width: 100%;
         z-index: -100;
     }
-    &__title {
+
+    &__desc {
         font-style: normal;
         font-weight: 300;
-        font-size: 100px;
-        line-height: 107%;
-        text-transform: uppercase;
         color: #ffffff;
+        &-title {
+            font-size: 35px;
+            line-height: 105%;
+            text-transform: uppercase;
+            margin-bottom:40px;
+        }
+        &-text {
+            font-size: 29px;
+            line-height: 130%;
+        }
     }
 }
-
