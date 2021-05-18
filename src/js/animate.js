@@ -35,6 +35,3 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 100);
 }
-
-const el = document.getElementById('');
-el.scrollIntoView();
