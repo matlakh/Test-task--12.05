@@ -14,7 +14,7 @@ if (animItems.length > 0) {
             const animItem = animItems[index];
             const animItemsHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
-            const animStart = 4;
+            const animStart = 2;
 
             let animItemPoint = window.innerHeight - animItemsHeight / animStart;
             if (animItemsHeight > window.innerHeight) {
