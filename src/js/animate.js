@@ -1,4 +1,9 @@
 
+$.scrollify({
+    section : ".section__bg",
+    scrollSpeed: 1100,
+    offset : 0,
+}); 
 
 const animItems = document.querySelectorAll('.section-animate');
 
@@ -8,8 +13,8 @@ if (animItems.length > 0) {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemsHeight = animItem.offsetHeight;
-            const animItemOffset = offset(animItem).top;
-            const animStart = 100;
+            const animItemOffset = offset(animItem).bottom;
+            const animStart = 4;
 
             let animItemPoint = window.innerHeight - animItemsHeight / animStart;
             if (animItemsHeight > window.innerHeight) {
@@ -21,7 +26,6 @@ if (animItems.length > 0) {
             } else {
                 animItem.classList.remove('start');
             }
-
         }
     }
     function offset(el) {

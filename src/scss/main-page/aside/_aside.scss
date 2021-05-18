@@ -1,6 +1,6 @@
 @import "aside-small-elem";
 @import "aside-big-elem";
-@import "aside-link"; 
+@import "aside-link";
 
 .aside {
     &__main {
@@ -8,6 +8,8 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     &__content {
         padding: 40px;
@@ -20,6 +22,7 @@
         @media (max-width: 600px) {
             padding: 20px;
         }
+        
     }
     &__head {
         display: flex;
@@ -56,6 +59,8 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 10px;
         @media (max-width: 1300px) {
             width: 500px;
         }

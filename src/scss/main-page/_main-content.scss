@@ -59,7 +59,8 @@
 }
 
 .sunflow-section {
-    top: 850px;
+    top: 800px;
+    z-index: -90;
 }
 .linen-section {
     top: 1600px;
@@ -76,9 +77,10 @@
 }
 
 .section-animate {
-    transform: translate(0px, 30%);
+    margin-top: 100px;
+    transform: translate(0px, 0px);
     opacity: 0;
-    transition: all 1s ease 0s;
+    transition: all 1s ease-in-out 0s;
 }
 .section-animate.start {
     transform: translate(0px, 0px);
