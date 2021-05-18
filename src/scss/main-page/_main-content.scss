@@ -7,7 +7,7 @@
         right: 0;
         z-index: -100;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         &__img {
             width: 100%;
             height: 1080px;
@@ -25,6 +25,7 @@
     &__wrapper {
         width: 100%;
         position: relative;
+        height: 100vh;
     }
     &__title {
         position: absolute;
@@ -61,19 +62,23 @@
 .sunflow-section {
     top: 800px;
     z-index: -90;
+    height: 100%;
 }
 .linen-section {
     top: 1600px;
     display: block;
     z-index: -50;
+    height: 100%;
 }
 .rapce-section {
     top: 2100px;
     z-index: -40;
+    height: 100%;
 }
 .basis-section {
     top: 2800px;
     z-index: -30;
+    height: 100%;
 }
 
 .section-animate {
@@ -81,8 +86,10 @@
     transform: translate(0px, 0px);
     opacity: 0;
     transition: all 1s ease-in-out 0s;
+    height: 100%;
 }
 .section-animate.start {
     transform: translate(0px, 0px);
     opacity: 1;
+    height: 100%;
 }

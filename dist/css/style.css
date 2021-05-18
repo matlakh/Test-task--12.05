@@ -877,7 +877,7 @@
   right: 0;
   z-index: -100;
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
   .section__bg__img {
     width: 100%;
     height: 1080px; }
@@ -893,7 +893,8 @@
 
 .section__wrapper {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 .section__title {
   position: absolute;
@@ -927,20 +928,24 @@
 
 .sunflow-section {
   top: 800px;
-  z-index: -90; }
+  z-index: -90;
+  height: 100%; }
 
 .linen-section {
   top: 1600px;
   display: block;
-  z-index: -50; }
+  z-index: -50;
+  height: 100%; }
 
 .rapce-section {
   top: 2100px;
-  z-index: -40; }
+  z-index: -40;
+  height: 100%; }
 
 .basis-section {
   top: 2800px;
-  z-index: -30; }
+  z-index: -30;
+  height: 100%; }
 
 .section-animate {
   margin-top: 100px;
@@ -948,13 +953,15 @@
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 0;
-  transition: all 1s ease-in-out 0s; }
+  transition: all 1s ease-in-out 0s;
+  height: 100%; }
 
 .section-animate.start {
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
-  opacity: 1; }
+  opacity: 1;
+  height: 100%; }
 
 .main-section {
   padding-top: 60px;
