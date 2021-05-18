@@ -866,6 +866,7 @@
           backdrop-filter: blur(80px); }
 
 .section__bg {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -921,20 +922,33 @@
       width: 100%; } }
 
 .sunflow-section {
-  top: 750px; }
+  top: 800px; }
 
 .linen-section {
-  top: 1500px;
+  top: 1600px;
   display: block;
   z-index: -50; }
 
 .rapce-section {
-  top: 2000px;
+  top: 2200px;
   z-index: -40; }
 
 .basis-section {
   top: 2800px;
   z-index: -30; }
+
+.section-animate {
+  -webkit-transform: translate(0px, 100%);
+      -ms-transform: translate(0px, 100%);
+          transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all .8s ease 0s; }
+
+.section-animate.start {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1; }
 
 .main-section {
   padding-top: 60px;
