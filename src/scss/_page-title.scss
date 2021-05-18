@@ -5,4 +5,7 @@
     line-height: 107%;
     text-transform: uppercase;
     color: #ffffff;
+    @media(max-width: 1005px) {
+        font-size: 70px;
+    }
 }
