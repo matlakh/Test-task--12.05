@@ -1,10 +1,14 @@
-buttonScroll = document.querySelector('.main-section__scroll');
+const anchors = document.querySelectorAll('.main-section__scroll');
 
-
-buttonScroll.onclick = sDown;
-
-function sDown(){
-    console.log(1);
-    document.body.scrollDown = 700;
-    document.documentElement.scrollDown = 700;
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 }
